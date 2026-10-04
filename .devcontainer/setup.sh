@@ -9,7 +9,7 @@ TMP_DIR="$(mktemp -d)"
 cd "$TMP_DIR"
 
 sudo apt-get update -y
-sudo apt-get install -y unzip wget
+sudo apt-get install -y unzip wget libfontconfig1
 
 echo "==> Installing Godot ${GODOT_VERSION}"
 wget -q "${BASE_URL}/Godot_v${GODOT_VERSION}-stable_linux.x86_64.zip"
